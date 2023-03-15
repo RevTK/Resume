@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Responsive resume cv</title>
+</head>
+
+<body class="scale-cv">
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">김태형</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="bx bx-home nav__icon"></i>Home
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class="bx bx-user nav__icon"></i>Profile
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class="bx bx-book nav__icon"></i>Education
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="bx bx-receipt nav__icon"></i>Skills
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class="bx bx-briefcase-alt nav__icon"></i>Experience
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class="bx bx-award nav__icon"></i>Certificates
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class="bx bx-link-external nav__icon"></i>References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bx-grid alt"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+
+            <div class="resume__left">
+
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/김태형.jpg" alt="" class="home__img">
+
+                            <h1 class="home__title"> 김<b>태형</b></h1>
+                            <h3 class="home__profession">Web Developer</h3>
+
+                            <!-- pdf폴더에 있는 CV를 다운 -->
+                            <div>
+                                <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__information">
+                                <i class="bx bx-map home__icon"></i>서울 성북구 동선동 3가 251 <br> 동선하우스 203호
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-envelope home__icon"></i> trainst37@gamil.com
+                            </span>
+                            <span class="home__information">
+                                <i class="bx bx-phone home__icon"></i> 010-5095-0203
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Theme change button -->
+                    <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                    <!-- Button to generate and download the pdf. Available for desktop. -->
+                    <i class="bx bx-download generate-pdf" title="PDF 생성/다운" id="resume-button"></i>
+                </section>
+
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    <h2 class="section-title">LINK</h2>
+                    <div class="social__container bd-grid">
+                        <a title="김태형의 깃허브" href="https://github.com/RevTK" target="_blank" class="social__link">
+                            <img src="assets/img/logo_github.svg" alt="" style="width: 28px;" class="social__img">
+                            Github
+                        </a>
+                        <a title="김태형의 포트폴리오" href="https://revtk.github.io/Portfolio/" target="_blank"
+                            class="social__link">
+                            <img src="assets/img/logo_resume.svg" alt="" style="width: 28px;" class="social__img">
+                            Portfolio
+                        </a>
+                        <a title="김태형의 노션"
+                            href="https://real-sweater-99b.notion.site/Developer-Study-34172d16960849ecb9ca4815371b8ee7"
+                            target="_blank" class="social__link">
+                            <img src="assets/img/logo_notion.svg" alt="" style="width: 25px;   margin-right: .7rem;"
+                                class="social__img"> Study
+                        </a>
+
+                    </div>
+                </section>
+
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <h2 class="section-title">Profile</h2>
+                    <p class="profile__description">
+                        늦은 나이에 시작했다는 단점이 뚜렷함에도 관심을 가셔 주셔서 진심으로 감사드립니다. 실패를 뒤로 하고 정신적으로 극복하여 여기까지 온 것에 대한 선물이라 생각합니다.
+                    </p>
+                </section>
+
+
+                <!--========== EDUCATION ==========-->
+                <section class="education section" id="education">
+                    <h2 class="section-title">학력사항</h2>
+
+                    <div class="education__container bd-grid">
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="eduaction__title">중학교</h3>
+                                <span class="education__studies">Ecole Active Bilingue(Paris, France)</span>
+                                <span class="education__year">2002 - 2015</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="eduaction__title">고등학교</h3>
+                                <span class="education__studies"> Hinkson Christian (Moscow, Russia)</span>
+                                <span class="education__year">2002 - 2003</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                            <div class="education__data bd-grid">
+                                <h3 class="eduaction__title">고등학교</h3>
+                                <span class="education__studies"> 서울 구정고등학교</span>
+                                <span class="education__year">2003 - 2004</span>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__time">
+                                <span class="education__rounder"></span>
+                            </div>
+
+                            <div class="education__data bd-grid">
+                                <h3 class="eduaction__title">대학교</h3>
+                                <span class="education__studies">성균관대 법학과</span>
+                                <span class="education__year">2004 - 2013</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">해외경험</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> 프랑스 파리<br> 2년6개월
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> 러시아 모스크바<br>유년기 2년, 고등학교 1년
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> 일본 <br>유년기 2년
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section-title">언어능력</h2>
+                    <div class="skills__content bd-grid">
+                        <ul class="skills__data">
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> 영어
+                            </li>
+                            <li class="skills__name">
+                                <span class="skills__circle"></span> 프랑스어
+                            </li>
+                        </ul>
+
+                    </div>
+                </section>
+
+            </div>
+
+
+            <div class="resume__right">
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">드리는 말씀</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <p class="certificate__description">성공에 가까웠던 경험과 처절한 실패를 딛고 다시 일어서기 위해 포기하지않고 걸어왔습니다.<br>
+                                다양한 경험들을 바탕으로 협력과 커뮤니케이션을 중요시 여기며 발전하여 조직에 공헌하고 싶습니다.</p>
+                        </div>
+                    </div>
+                </section>
+                <!--========== EXPERIENCE ==========-->
+                <section class="experience section" id="experience">
+                    <h2 class="section-title">경력사항</h2>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">르노삼성자녀 영어캠프 수퍼바이저</h3>
+                                <span class="experience__company">2009</span>
+                                <p class="experience__description">대학교 재학시절 해외경험을 바탕으로 영어캠프 교사들을 관리하는 일을 한 바 있습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">영어 및 수학 과외</h3>
+                                <span class="experience__company">2010 - 2015</span>
+                                <p class="experience__description">사법시험을 잠시 준비하면서 중학생 영어와 수학, 수험생 대상으로 과외 교사를 한 경험이
+                                    있습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">리비아 대사관 자녀 가정교사 </h3>
+                                <span class="experience__company">2014 - 2016</span>
+                                <p class="experience__description">리비아 대사관 자녀 2명을 맡아 영어와 프랑스어를 가르치며 가정교사 일을 하였습니다. 공부와
+                                    함께 한국문화를 소개하고 미국인 학교 선생님과의 소통창구 역할을 하였습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">유통사업관리 | (주)혁신팝물류</h3>
+                                <span class="experience__company">2015 - 2017</span>
+                                <p class="experience__description">생필품이나 커피 및 라면 등을 유통하는 회사였습니다. 10인이 안되는 사업장이고 후에 투자도
+                                    하여서 한 사업에 필요한 간단한 잡무도 보았습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">편의점 및 일용직</h3>
+                                <span class="experience__company">2017 - 2019</span>
+                                <p class="experience__description">세븐일레븐 편의점 아르바이트 및 일용직 일을 하였습니다. 나이키, 노스페이스, ABC 마트의
+                                    창고에서 피킹 및 물류정리, 기업이사, 전시회 설치 등을 경험했습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">축구의류 스타트업 준비 매니저 | (주) 쿠엘</h3>
+                                <span class="experience__company">2019 - 2020</span>
+                                <p class="experience__description">사업에 필요한 일을 했었던 경험으로 지인의 요청으로 단기간 회사 설립 및 초기 기반을 구성하는
+                                    일을 하였습니다.</p>
+                            </div>
+                        </div>
+
+                        <div class="experience__content">
+                            <div class="experience__time">
+                                <span class="experience__rounder"></span>
+                            </div>
+                            <div class="experience__data bd-grid">
+                                <h3 class="experience__title">여성의류 창고 및 재고관리 | 스튜디오 제이</h3>
+                                <span class="experience__company">2020 - 2022</span>
+                                <p class="experience__description">동대문 새벽시장에서 일하였습니다. 의류 입고 및 출고 업무와 재고 관리 등을 주로 하였습니다.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">교육이수</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">솔데스크 개발자 양성과정​(2022.9 - 2023.3)</h3>
+                            <p class="certificate__description">개발은 제가 전공한 법학처럼 평생 공부해야 한다는 점에서 비슷하지만, 비교할 수 없을만큼 명확한
+                                분야라는 점에서 제겐 큰 매력이었습니다. 지난 학원에서 배운 6개월은 포기하지 않고 즐겨온 제게 행복한 시간이었습니다.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h2 class="section-title">IT활용 및 공부한 기술</h2>
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">JAVA</h3>
+                            <p class="certificate__description">Java를 주로 사용하여 웹 개발 프로젝트를 진행하였습니다. 가장 중요한 언어라고 생각하여 항상 반복 연습하고 있습니다.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Spring</h3>
+                            <p class="certificate__description">전자정부 프레임워크 3.9 기반으로 파이널 프로젝트를 진행하였습니다. Controller, Service, 어노테이션 개념과 DI (Dependency Injection) 개념에 대하여 이해하고 있습니다.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Servlet&JSP</h3>
+                            <p class="certificate__description">Servlet의 역할에 대한 이해와 커스텀 태그와 액션태그, jstl 등의 기본적인 사용을 훈련했습니다.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">HTML/CSS/​JavaScript/jQuery</h3>
+                            <p class="certificate__description">기초적인 사용을 익혔습니다. 정돈된 틀의 중요성을 느꼈고 프로젝트를 진행하며 CaseStudy를 통해 익숙해 지려고 노력했습니다. 다양한 오픈 라이브버리를 가져와 적용해보았습니다. jQuery의 필요성과 현재의 위치에 대해 이해하고 있습니다. ajax와 함께 사용하는 부분에 대하여 간단히 익혔습니다.</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">SQL​</h3>
+                            <p class="certificate__description">기본적인 문법을 반복연습하는데 중점을 두었습니다</p>
+                        </div>
+                        <div class="certificate__content">
+                            <h3 class="certificate__title">Python</h3>
+                            <p class="certificate__description">최근에 배우기 시작했습니다. 아직 능숙하지는 않지만 직접 몇몇 모델을 만들어보고 적용해보았습니다.</p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references">
+                    <h2 class="section-title">프로젝트</h2>
+                    <div>프로젝트별 상세내용은 포트폴리오를 통해 확인하실 수 있습니다.</div>
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">파이널 프로젝트</span>
+                            <h3 class="references__title">Mr. Clay Doe</h3>
+                            <ul class="references__contact">
+                                <li>기간: 999-999-999</li>
+                                <li>역할: user@mail.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid">
+                            <span class="references__subtitle">세미 프로젝트</span>
+                            <h3 class="references__title">Mr. Clay Doe</h3>
+                            <ul class="references__contact">
+                                <li>기간: 999-999-999</li>
+                                <li>역할: user@mail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section">
+                    <h2 class="section-title">Languages</h2>
+                    <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> 영어
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> 프랑스어
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Korean
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h2 class="section-title">Interests</h2>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <i class="bx bx-headphone interests__icon"></i>
+                            <span class="interests__name">Music</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bxs-plane-alt interests__icon"></i>
+                            <span class="interests__name">Travel</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-book interests__icon"></i>
+                            <span class="interests__name">Read</span>
+                        </div>
+
+                        <div class="interests__content">
+                            <i class="bx bx-dumbbell interests__icon"></i>
+                            <span class="interests__name">Fitness</span>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
