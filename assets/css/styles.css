@@ -96,7 +96,9 @@ body.scale-cv{
 
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme,
-.scale-cv .generate-pdf{
+.scale-cv .generate-pdf,
+.scale-cv .social,
+.scale-cv .notice{
   display: none;
 }
 
@@ -110,6 +112,17 @@ body.scale-cv{
 
 .scale-cv .section-title{
   margin-bottom: .75rem;
+}
+
+.scale-cv .about__line{
+  display: none;
+}
+
+.scale-cv .resume{
+  display: grid;
+  grid-template-columns: .15fr 1fr;
+  background-color: var(--container-color);
+  box-shadow: 0 0 8px rgba(13, 12, 12, 15);
 }
 
 .scale-cv .resume__left,
@@ -134,6 +147,12 @@ body.scale-cv{
 .scale-cv .social__container{
   gap: .75rem;
 }
+
+.scale-cv .social__container{
+  row-gap: .2rem;
+}
+
+
 
 .scale-cv .social__img{
   display: none;
@@ -180,6 +199,10 @@ body.scale-cv{
 
 .scale-cv .interests__container{
   column-gap: 2.5rem;
+}
+
+.scale-cv .references__contact a{
+  display: none;
 }
 
 body{
@@ -297,7 +320,7 @@ img{
 
 .nav__list{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
 }
 
@@ -515,6 +538,10 @@ img{
   color: var(--text-color-light);
 }
 
+.references__contact a{
+  color: var(--text-color);
+}
+
 .references__subtitle,
 .references__contact{
   font-size: var(--small-font-size);
@@ -527,7 +554,7 @@ img{
 
 /*========== INTERESTS ==========*/
 .interests__container{
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   margin-top: var(--mb-2);
 }
 
@@ -598,7 +625,7 @@ img{
 
   .resume{
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: .4fr 1fr;
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13, 12, 12, 15);
   }
@@ -631,11 +658,11 @@ img{
 
   .languages__content{
     grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
+    column-gap: 1.5rem;
   }
 
   .interests__container{
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(5, max-content);
     column-gap: 3.5rem;
   }
 }

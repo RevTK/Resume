@@ -100,11 +100,12 @@ let resumeButton = document.getElementById('resume-button')
 // Html2pdf options
 
 let opt = {
-  margin:       0,
+  margin:       [5, 3, 3, 5],
   filename:     '김태형_이력서.pdf',
   image:        { type: 'jpeg', quality: 0.98 },
   html2canvas:  { scale: 4 },
-  jsPDF:        { format: 'a4', orientation: 'portrait' }
+  jsPDF:        { format: 'a4', orientation: 'portrait' },
+  pagebreak: { after:['.interests, .education', '.page1']}
 };
 
 
