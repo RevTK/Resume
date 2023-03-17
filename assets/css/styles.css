@@ -108,10 +108,11 @@ body.scale-cv{
 
 .scale-cv .section{
   padding: 1.5rem 0 .80rem;
+  margin-bottom: -0.5rem;
 }
 
 .scale-cv .section-title{
-  margin-bottom: .75rem;
+  margin-bottom: .55rem;
 }
 
 .scale-cv .about__line{
