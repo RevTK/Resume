@@ -658,8 +658,8 @@ img{
   }
 
   .languages__content{
-    grid-template-columns: repeat(3, max-content);
-    column-gap: 1.5rem;
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 2rem;
   }
 
   .interests__container{
