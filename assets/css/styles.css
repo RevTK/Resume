@@ -80,6 +80,7 @@ body.scale-cv{
   --smaller-font-size: .688rem;
 }
 
+
 /*========== Generate PDF button ==========*/
 .generate-pdf{
   position: absolute;
@@ -94,16 +95,18 @@ body.scale-cv{
   color:var(--title-color)
 }
 
+
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 .scale-cv .change-theme,
 .scale-cv .generate-pdf,
 .scale-cv .social,
-.scale-cv .notice{
+.scale-cv .notice,
+.scale-cv .projects__notice{
   display: none;
 }
 
 .scale-cv .bd-container{
-  max-width: 595px;
+  max-width: 800px;
 }
 
 .scale-cv .section{
@@ -152,8 +155,6 @@ body.scale-cv{
 .scale-cv .social__container{
   row-gap: .2rem;
 }
-
-
 
 .scale-cv .social__img{
   display: none;
@@ -205,6 +206,9 @@ body.scale-cv{
 .scale-cv .references__contact a{
   display: none;
 }
+
+
+/* =========================================== */
 
 body{
   margin: 0 0 var(--header-height);
@@ -352,6 +356,7 @@ img{
   color: var(--title-color);
 }
 
+
 /*========== HOME ==========*/
 .home{
   position: relative;
@@ -415,7 +420,6 @@ img{
 }
 
 
-
 /*========== SOCIAL ==========*/
 .social__container{
   grid-template-columns: max-content;
@@ -438,10 +442,29 @@ img{
 }
 
 
+/*========== PROJECTS ==========*/
+.projects__notice{
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+}
+
+.projects__button{
+  background-color: rgba(231, 247, 167, 0.786);
+  font-weight: var(--font-semi-bold);
+  text-decoration: underline;
+}
+
+.projects__img{
+  width: 400px;
+  height: 200px
+}
+
+
 /*========== PROFILE ==========*/
 .profile__description{
   text-align: center;
 }
+
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
 .education__content,
@@ -494,6 +517,7 @@ img{
   font-size: var(--smaller-font-size);
 }
 
+
 /*========== SKILLS AND LANGUAGES ==========*/
 .languages__content{
   grid-template-columns: repeat(2, 1fr);
@@ -524,11 +548,13 @@ img{
   margin-right: .75rem;
 }
 
+
 /*========== CERTIFICATES ==========*/
 .certificate__title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
+
 
 /*========== REFERENCES ==========*/
 .references__content{
@@ -597,6 +623,7 @@ img{
   visibility: visible;
   bottom: 5rem;
 }
+
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
