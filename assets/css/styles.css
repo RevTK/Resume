@@ -217,7 +217,7 @@ body.scale-cv{
 
 .text__highlight{
   text-decoration: underline;
-  background-color: rgba(231, 247, 167, 0.786);
+  background-color: rgba(251, 251, 59, 0.751);
 }
 
 body{
@@ -459,9 +459,10 @@ img{
 }
 
 .projects__button{
-  background-color: rgba(231, 247, 167, 0.786);
+  background-color: rgba(251, 251, 59, 0.751);
   font-weight: var(--font-semi-bold);
   text-decoration: underline;
+  font-size: var(--h3-font-size);
 }
 
 .projects__img{
