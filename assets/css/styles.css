@@ -54,6 +54,11 @@ body.dark-theme{
   --body-color: #2B2B2B;
 }
 
+.dark-theme .text__highlight,
+.dark-theme .projects__button{
+  background-color: rgba(34, 46, 211, 0.822);
+}
+
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
@@ -209,6 +214,11 @@ body.scale-cv{
 
 
 /* =========================================== */
+
+.text__highlight{
+  text-decoration: underline;
+  background-color: rgba(231, 247, 167, 0.786);
+}
 
 body{
   margin: 0 0 var(--header-height);
